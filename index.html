@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rashmika Wickramaarachchi | Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Rashmika Wickramaarachchi, a passionate Data Science undergraduate specializing in Machine Learning, Statistical Analysis, and Deep Learning.">
+  <meta name="keywords" content="Data Science, Portfolio, Machine Learning, Deep Learning, Python, Undergrad, Developer, Portfolio Web">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader-wrapper">
+    <div class="loader-content">
+      <h1 class="loader-title">E.R. Wickramaarachchi</h1>
+      <p class="loader-subtitle">Loading Portfolio...</p>
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header id="header">
+    <div class="container">
+      <a href="#hero" class="logo">E.R. Wickramaarachchi</a>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-corner-circle corner-tl"></div>
+    <div class="hero-corner-circle corner-br"></div>
+    
+    <div class="container">
+      <div class="hero-grid-container">
+        <!-- Hero Left Side -->
+        <div class="hero-content scroll-reveal">
+          <span class="hero-small-label" style="font-size: 1.5rem;">Hello, I'm</span>
+          <h1 class="hero-main-name">Eranda Rashmika Wickramaarachchi</h1>
+          <div class="hero-typewriter-container">
+            <span class="hero-typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            Dean's List undergraduate at SLIIT Kandy specializing in Data Warehousing, ETL Development, Business Intelligence, and Statistical Modelling. Building data-driven solutions with Python, R, SQL Server, Power BI, and SSIS.
+          </p>
+          <div class="hero-actions-container">
+            <a href="assets/Rashmika_CV.pdf" download class="btn-cv">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+            <a href="#projects" class="btn-projects">
+              View Projects
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/rashmika-wickramaarachchi-3ba863392/?skipRedirect=true" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/wickramaarachchi-er" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:wickramaarachchier@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <!-- Hero Right Side -->
+        <div class="hero-visual scroll-reveal delay-1">
+          <div class="profile-rings-container">
+            <div class="profile-ring ring-1"></div>
+            <div class="profile-ring ring-2"></div>
+            <div class="profile-ring ring-3"></div>
+          </div>
+          <div class="profile-photo-wrapper">
+            <img src="assets/profile.jpg" alt="Eranda Rashmika" class="profile-photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section-light">
+    <div class="container">
+      <div class="section-header-centered scroll-reveal">
+        <h2 class="section-title-light">About Me</h2>
+      </div>
+      
+      <div class="about-grid-new">
+        <!-- Left Column -->
+        <div class="about-left-col scroll-reveal delay-1">
+          <div class="about-image-new-wrapper">
+            <img src="assets/profile.jpg" alt="Eranda Rashmika" class="about-image-new">
+          </div>
+          
+          <div class="about-stats-row">
+            <div class="about-stat-card">
+              <span class="stat-number">3.72</span>
+              <span class="stat-label">Latest GPA</span>
+              <span class="stat-sub">Dean's List Y2S2</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-label" style="font-size: 1.25rem;">Dean's List</span>
+              <span class="stat-sub">Year 2 Sem 2</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+              <span class="stat-sub">Academic & Personal</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="about-right-col scroll-reveal delay-2">
+          <h3 class="about-subtitle-new">Data Science Undergraduate at SLIIT</h3>
+          <p class="about-p-new">
+            I am a third year Data Science undergraduate at SLIIT Kandy with a consistent upward academic trajectory (3.29 → 3.43 → 3.54 → 3.72) earning Dean's List recognition in Year 2 Semester 2. I specialize in building end-to-end data warehouse and BI solutions, statistical modelling pipelines, and full-stack web applications. I currently serve as Batch Representative at SLIIT Kandy and have held leadership roles including President of the Court of Honour at the 1st Kandy Dharmaraja Scout Group.
+          </p>
+          
+          <div class="about-info-grid-new">
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">Name:</span>
+              <span class="info-value-new">Eranda Rashmika Wickramaarachchi</span>
+            </div>
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">Degree:</span>
+              <span class="info-value-new">BSc (Hons) IT - Data Science</span>
+            </div>
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">University:</span>
+              <span class="info-value-new">SLIIT Kandy</span>
+            </div>
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">Year:</span>
+              <span class="info-value-new">3rd Year (2023 – Present)</span>
+            </div>
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">Location:</span>
+              <span class="info-value-new">Kandy, Sri Lanka</span>
+            </div>
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">Email:</span>
+              <span class="info-value-new"><a href="mailto:wickramaarachchier@gmail.com">wickramaarachchier@gmail.com</a></span>
+            </div>
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">Phone:</span>
+              <span class="info-value-new"><a href="tel:+94715245420">(+94) 715245420</a></span>
+            </div>
+            <div class="info-grid-item">
+              <span class="info-dot"></span>
+              <span class="info-label-new">Status:</span>
+              <span class="info-value-new">✅ Open to Internships</span>
+            </div>
+          </div>
+          
+          <a href="assets/Rashmika_CV.pdf" download class="btn-cv-download">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section-new">
+    <div class="container">
+      <div class="section-header-centered scroll-reveal">
+        <h2 class="section-title-skills">Technical Skills</h2>
+      </div>
+
+      <div class="skills-cards-grid">
+
+        <!-- Card 1: Data & Analytics -->
+        <div class="skill-category-card scroll-reveal delay-1">
+          <div class="skill-category-header">
+        
+            <h3 class="skill-category-title">Data &amp; Analytics</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">ETL Development</span>
+            <span class="skill-pill">Star Schema</span>
+            <span class="skill-pill">SCD Type 2</span>
+            <span class="skill-pill">OLAP</span>
+            <span class="skill-pill">DAX</span>
+            <span class="skill-pill">Dimensional Modelling</span>
+            <span class="skill-pill">Data Warehousing</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">SSIS</span>
+            <span class="skill-pill">SSAS</span>
+            <span class="skill-pill">Excel PivotTables</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Programming & Statistics -->
+        <div class="skill-category-card scroll-reveal delay-2">
+          <div class="skill-category-header">
+           
+            <h3 class="skill-category-title">Programming &amp; Statistics</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Matplotlib</span>
+            <span class="skill-pill">Seaborn</span>
+            <span class="skill-pill">Scikit-learn</span>
+            <span class="skill-pill">ggplot2</span>
+            <span class="skill-pill">tidyverse</span>
+            <span class="skill-pill">Regression Analysis</span>
+            <span class="skill-pill">ANOVA</span>
+            <span class="skill-pill">Hypothesis Testing</span>
+            <span class="skill-pill">Logistic Regression</span>
+            <span class="skill-pill">VIF</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Databases & Backend -->
+        <div class="skill-category-card scroll-reveal delay-3">
+          <div class="skill-category-header">
+          
+            <h3 class="skill-category-title">Databases &amp; Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">SQL Server (SSMS)</span>
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express.js</span>
+            <span class="skill-pill">REST API</span>
+            <span class="skill-pill">JWT Authentication</span>
+            <span class="skill-pill">Google OAuth 2.0</span>
+            <span class="skill-pill">RBAC</span>
+            <span class="skill-pill">Spring Security</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Nginx</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Tools & Frontend -->
+        <div class="skill-category-card scroll-reveal delay-4">
+          <div class="skill-category-header">
+            <h3 class="skill-category-title">Tools &amp; Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">React.js</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">Jupyter Notebook</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">IntelliJ IDEA</span>
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Android Studio</span>
+            <span class="skill-pill">Power BI Service</span>
+            <span class="skill-pill">Kotlin</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section-light">
+    <div class="container">
+
+      <div class="section-header-centered scroll-reveal">
+        <h2 class="section-title-projects">Projects</h2>
+        <p class="section-subtitle-projects">Academic &amp; Personal Projects</p>
+      </div>
+
+      <div class="projects-new-grid">
+
+        <!-- Project 1: Retail Data Warehouse -->
+        <div class="proj-card scroll-reveal delay-1">
+          <div class="proj-badge badge-blue">Data Engineering</div>
+          <h3 class="proj-title">Retail Data Warehouse &amp; BI System</h3>
+          <span class="proj-date"><i class="fa-regular fa-calendar"></i> April 2026</span>
+          <p class="proj-desc">
+            End-to-end DW &amp; BI solution built on 53,753+ retail transaction records. Designed Star Schema with SCD Type 2 historical tracking, built 3 modular SSIS ETL packages extracting from 4 source formats, deployed SSAS cube with 5 OLAP operations, and published 4 interactive Power BI reports to Power BI Service with custom DAX measures.
+          </p>
+          <div class="proj-tech-tags">
+            <span class="proj-tech">SQL Server</span>
+            <span class="proj-tech">SSIS</span>
+            <span class="proj-tech">SSAS</span>
+            <span class="proj-tech">Power BI</span>
+            <span class="proj-tech">DAX</span>
+            <span class="proj-tech">Star Schema</span>
+            <span class="proj-tech">SCD Type 2</span>
+            <span class="proj-tech">ETL</span>
+            <span class="proj-tech">OLAP</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-context"><i class="fa-solid fa-user"></i> Individual Academic Project | SLIIT IT3021</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Sports Performance -->
+        <div class="proj-card scroll-reveal delay-2">
+          <div class="proj-badge badge-green">Statistical Modelling</div>
+          <h3 class="proj-title">Sports Performance Statistical Analysis</h3>
+          <span class="proj-date"><i class="fa-regular fa-calendar"></i> 2026</span>
+          <p class="proj-desc">
+            Investigated Mental Focus vs Athletic Performance across 16+ variables using full R analytics pipeline. Applied MLR, One-Way ANOVA (p&lt;0.001), Logistic Regression, and VIF multicollinearity checks. Key finding: Hydration vs BMI yielded R²=0.2577 (p&lt;2.2e-16). Generated heatmaps, faceted scatter plots, and logistic S-curves using ggplot2.
+          </p>
+          <div class="proj-tech-tags">
+            <span class="proj-tech">R</span>
+            <span class="proj-tech">ggplot2</span>
+            <span class="proj-tech">tidyverse</span>
+            <span class="proj-tech">psych</span>
+            <span class="proj-tech">car</span>
+            <span class="proj-tech">Statistical Modelling</span>
+            <span class="proj-tech">Regression</span>
+            <span class="proj-tech">ANOVA</span>
+            <span class="proj-tech">Hypothesis Testing</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-context"><i class="fa-solid fa-users"></i> Group Academic Project | SLIIT IT3011</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Smart Campus -->
+        <div class="proj-card scroll-reveal delay-3">
+          <div class="proj-badge badge-purple">Full-Stack</div>
+          <h3 class="proj-title">Smart Campus System</h3>
+          <span class="proj-date"><i class="fa-regular fa-calendar"></i> April 2026</span>
+          <p class="proj-desc">
+            Full-stack web platform for campus operations with smart resource booking, conflict detection, incident reporting with threaded comments, Google OAuth 2.0 and JWT authentication, RBAC (USER/ADMIN/TECHNICIAN), automated SendGrid email notifications, containerized with Docker and Nginx.
+          </p>
+          <div class="proj-tech-tags">
+            <span class="proj-tech">Spring Boot</span>
+            <span class="proj-tech">React.js</span>
+            <span class="proj-tech">MySQL</span>
+            <span class="proj-tech">Docker</span>
+            <span class="proj-tech">Nginx</span>
+            <span class="proj-tech">Google OAuth 2.0</span>
+            <span class="proj-tech">JWT</span>
+            <span class="proj-tech">RBAC</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-context"><i class="fa-solid fa-users"></i> Group Project | SLIIT IT3030</span>
+            <a href="https://github.com/wickramaarachchi-er" target="_blank" class="proj-github-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: FIRELINK LANKA -->
+        <div class="proj-card scroll-reveal delay-4">
+          <div class="proj-badge badge-purple">Full-Stack</div>
+          <h3 class="proj-title">FIRELINK LANKA - Fire Brigade System</h3>
+          <span class="proj-date"><i class="fa-regular fa-calendar"></i> November 2025</span>
+          <p class="proj-desc">
+            MERN stack application digitizing fire brigade operations with real-time incident management, GPS-based vehicle dispatch, role-based access control, and RESTful APIs. Applied MongoDB schema design with embedding vs referencing patterns.
+          </p>
+          <div class="proj-tech-tags">
+            <span class="proj-tech">MongoDB</span>
+            <span class="proj-tech">Express.js</span>
+            <span class="proj-tech">React.js</span>
+            <span class="proj-tech">Node.js</span>
+            <span class="proj-tech">Socket.IO</span>
+            <span class="proj-tech">JWT</span>
+            <span class="proj-tech">REST API</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-context"><i class="fa-solid fa-users"></i> Group Project | SLIIT</span>
+            <a href="https://github.com/wickramaarachchi-er" target="_blank" class="proj-github-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: RoutiMood -->
+        <div class="proj-card scroll-reveal delay-1">
+          <div class="proj-badge badge-orange">Mobile</div>
+          <h3 class="proj-title">RoutiMood - Android Wellness App</h3>
+          <span class="proj-date"><i class="fa-regular fa-calendar"></i> November 2025</span>
+          <p class="proj-desc">
+            Android mobile application using Kotlin with Fragment/Activity architecture for habit tracking, mood journaling, and settings management. Used SharedPreferences for data persistence and explicit and implicit intents for smooth navigation.
+          </p>
+          <div class="proj-tech-tags">
+            <span class="proj-tech">Kotlin</span>
+            <span class="proj-tech">Android Studio</span>
+            <span class="proj-tech">Fragment Navigation</span>
+            <span class="proj-tech">SharedPreferences</span>
+            <span class="proj-tech">Intents</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-context"><i class="fa-solid fa-user"></i> Individual Project | SLIIT</span>
+            <a href="https://github.com/wickramaarachchi-er" target="_blank" class="proj-github-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6: NutriCheck -->
+        <div class="proj-card scroll-reveal delay-2">
+          <div class="proj-badge badge-purple">Web Platform</div>
+          <h3 class="proj-title">NutriCheck (Diet Planning &amp; Health Check-Up System)</h3>
+          <span class="proj-date"><i class="fa-regular fa-calendar"></i> November 2024</span>
+          <p class="proj-desc">
+            Designed and developed a health management web platform using HTML, CSS, JavaScript, SQL, and Tomcat, featuring personalized diet plans and health checkups. Implemented full CRUD functionality, BMI calculation, appointment booking, package purchasing, and an admin dashboard for efficient patient and service management.
+          </p>
+          <div class="proj-tech-tags">
+            <span class="proj-tech">HTML</span>
+            <span class="proj-tech">CSS</span>
+            <span class="proj-tech">JavaScript</span>
+            <span class="proj-tech">SQL</span>
+            <span class="proj-tech">Tomcat</span>
+            <span class="proj-tech">CRUD</span>
+            <span class="proj-tech">Admin Dashboard</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-context"><i class="fa-solid fa-users"></i> Group Project | SLIIT</span>
+            <a href="https://github.com/wickramaarachchi-er" target="_blank" class="proj-github-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications-section-dark">
+    <div class="container">
+      <div class="section-header-centered scroll-reveal">
+        <h2 class="section-title-certifications">Certifications</h2>
+      </div>
+
+      <div class="certifications-new-grid">
+
+        <!-- Certification 1: MongoDB -->
+        <div class="cert-new-card scroll-reveal delay-1">
+          <div class="cert-new-icon-wrapper cert-icon-mongo">
+            <svg class="cert-mongo-leaf" viewBox="0 0 15 32" width="36" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.44 29.46c-.29-1.76-.78-2.12-.78-2.12s-.1-.06-.1-.32c-.02-.42-.06-1.13-.08-1.93-.73 2.53-2.17 3.63-2.17 3.63s5.06-6.87 2.7-15.09C5.64 5.63.82 2.61.82 2.61l-.06-.1S.62 2.23.5 1.86c-.01.12-.05.24-.05.37 0 0-.62 1.77-.45 5.78.17 4.01 1.73 6.58 3.43 9.07 1.58 2.31 3.36 4.2 3.6 6.4.08.7.1 1.41.1 1.41l.22 1.78.22 1.03.6.3.38-.1.17-.51-.29-3.93z" fill="#00ED64"/>
+            </svg>
+          </div>
+          <div class="cert-new-badge cert-badge-green">Verified Certificate</div>
+          <h3 class="cert-new-title">MongoDB Data Modeling Path</h3>
+          <span class="cert-new-issuer">MongoDB, Inc.</span>
+          <span class="cert-new-date"><i class="fa-regular fa-calendar"></i> January 2026</span>
+          <span class="cert-new-id"><i class="fa-solid fa-fingerprint"></i> MDB1cksh7hj0l</span>
+          <p class="cert-new-desc">Completed official MongoDB Data Modeling Path covering document-oriented schema design, embedding vs referencing patterns, schema validation, and indexing strategies for scalable applications.</p>
+          <a href="assets/mongodb_certificate.pdf" target="_blank" class="cert-new-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+          </a>
+        </div>
+
+        <!-- Certification 2: SLIIT IT Applications -->
+        <div class="cert-new-card scroll-reveal delay-2">
+          <div class="cert-new-icon-wrapper cert-icon-blue">
+            <i class="fa-solid fa-graduation-cap" style="font-size: 1.8rem; color: #60A5FA;"></i>
+          </div>
+          
+          <div class="cert-new-badge cert-badge-blue">Completed</div>
+          <h3 class="cert-new-title">Certificate Programme in IT Applications</h3>
+          <span class="cert-new-issuer">SLIIT Kandy</span>
+          <span class="cert-new-date"><i class="fa-regular fa-calendar"></i> 2023</span>
+          <p class="cert-new-desc">Technical training in computer architecture, operating systems, networking, database management, and web development using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <!-- Certification 3: British English -->
+        <div class="cert-new-card scroll-reveal delay-3">
+          <div class="cert-new-icon-wrapper cert-icon-purple">
+            <i class="fa-solid fa-comments" style="font-size: 1.8rem; color: #A78BFA;"></i>
+          </div>
+          <div class="cert-new-badge cert-badge-purple">Top Performer</div>
+          <h3 class="cert-new-title">Intensive British English Course</h3>
+          <span class="cert-new-issuer">SLIIT Kandy</span>
+          <span class="cert-new-date"><i class="fa-regular fa-calendar"></i> 2023</span>
+          <p class="cert-new-desc">Intensive English programme covering grammar, academic writing, and professional communication. Recognized as one of the best-performing students.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Leadership Section -->
+  <section id="achievements" class="achievements-section-light">
+    <div class="container">
+      <div class="section-header-centered scroll-reveal">
+        <h2 class="section-title-achievements">Achievements &amp; Leadership</h2>
+      </div>
+
+      <div class="achv-timeline">
+
+        <!-- Item 1: Dean's List -->
+        <div class="achv-item scroll-reveal">
+          <div class="achv-dot"></div>
+          <div class="achv-card achv-card-highlight">
+            <div class="achv-icon-row">
+              
+              <span class="achv-year-badge">Dec 2025</span>
+            </div>
+            <h3 class="achv-title">Dean's List - Year 2 Semester 2</h3>
+            <span class="achv-org">SLIIT Kandy</span>
+            <p class="achv-desc">Achieved Dean's List recognition with GPA 3.72 - part of a consistent upward academic trajectory across all 4 semesters: 3.29 → 3.43 → 3.54 → 3.72</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Batch Representative -->
+        <div class="achv-item scroll-reveal">
+          <div class="achv-dot"></div>
+          <div class="achv-card">
+            <div class="achv-icon-row">
+              
+              <span class="achv-year-badge">2026 – Present</span>
+            </div>
+            <h3 class="achv-title">Batch Representative</h3>
+            <span class="achv-org">SLIIT Kandy</span>
+            <p class="achv-desc">Elected representative for the Data Science batch - coordinating between students and faculty, organizing batch activities, and ensuring academic welfare of peers.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: SIS Member -->
+        <div class="achv-item scroll-reveal">
+          <div class="achv-dot"></div>
+          <div class="achv-card">
+            <div class="achv-icon-row">
+              
+              <span class="achv-year-badge">2026 – Present</span>
+            </div>
+            <h3 class="achv-title">Committee Member - Student Interactive Society (SIS)</h3>
+            <span class="achv-org">SLIIT Kandy</span>
+          </div>
+        </div>
+
+        <!-- Item 4: AIESEC -->
+        <div class="achv-item scroll-reveal">
+          <div class="achv-dot"></div>
+          <div class="achv-card">
+            <div class="achv-icon-row">
+              
+              <span class="achv-year-badge">2025 – 2026</span>
+            </div>
+            <h3 class="achv-title">Member - AIESEC</h3>
+            <span class="achv-org">SLIIT Kandy</span>
+          </div>
+        </div>
+
+        <!-- Item 5: Scout President -->
+        <div class="achv-item scroll-reveal">
+          <div class="achv-dot"></div>
+          <div class="achv-card">
+            <div class="achv-icon-row">
+              
+              <span class="achv-year-badge">2021 – 2022</span>
+            </div>
+            <h3 class="achv-title">President - Council of Honour</h3>
+            <span class="achv-org">1st Kandy Dharmaraja Scout Group, Dharmaraja College Kandy</span>
+            <p class="achv-desc">Led the Council of Honour as President Scout, strengthening leadership, teamwork, and communication through scouting responsibilities and community service.</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Junior Prefect -->
+        <div class="achv-item scroll-reveal">
+          <div class="achv-dot"></div>
+          <div class="achv-card">
+            <div class="achv-icon-row">
+              
+              <span class="achv-year-badge">2017</span>
+            </div>
+            <h3 class="achv-title">Junior Prefect</h3>
+            <span class="achv-org">Dharmaraja College, Kandy</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section-dark">
+    <div class="container">
+      <div class="section-header-centered scroll-reveal">
+        <h2 class="section-title-contact">Get In Touch</h2>
+        <p class="contact-subtitle">I am actively seeking Data Science and Data Engineering internship opportunities in Sri Lanka. Feel free to reach out - I would love to connect!</p>
+      </div>
+
+      <div class="contact-new-grid">
+
+        <!-- Left Column: Contact Info -->
+        <div class="contact-left-col scroll-reveal delay-1">
+          <h3 class="contact-col-title">Contact Information</h3>
+
+          <a href="mailto:wickramaarachchier@gmail.com" class="cinfo-card">
+            
+            <div class="cinfo-text">
+              <span class="cinfo-label">Email</span>
+              <span class="cinfo-value">wickramaarachchier@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+94715245420" class="cinfo-card">
+            
+            <div class="cinfo-text">
+              <span class="cinfo-label">Phone</span>
+              <span class="cinfo-value">(+94) 71 524 5420</span>
+            </div>
+          </a>
+
+          <div class="cinfo-card">
+            
+            <div class="cinfo-text">
+              <span class="cinfo-label">Location</span>
+              <span class="cinfo-value">Kandy, Central Province, Sri Lanka</span>
+            </div>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="contact-social-row">
+            <a href="https://www.linkedin.com/in/rashmika-wickramaarachchi-3ba863392/?skipRedirect=true" target="_blank" class="csocial-btn csocial-linkedin">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/wickramaarachchi-er" target="_blank" class="csocial-btn csocial-github">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <!-- Status Badge -->
+          <div class="contact-status-badge">
+            <span class="status-pulse"></span>
+            <span class="status-text">Open to Internships</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Contact Form -->
+        <div class="contact-right-col scroll-reveal delay-2">
+          <h3 class="contact-col-title">Send a Message</h3>
+
+          <form id="contact-form" class="cform">
+            <div class="cform-group">
+              <label for="contact-name" class="cform-label">Full Name</label>
+              <input type="text" id="contact-name" name="name" class="cform-input" placeholder="Your Full Name" required>
+            </div>
+
+            <div class="cform-group">
+              <label for="contact-email" class="cform-label">Email Address</label>
+              <input type="email" id="contact-email" name="email" class="cform-input" placeholder="your@email.com" required>
+            </div>
+
+            <div class="cform-group">
+              <label for="contact-subject" class="cform-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="cform-input" placeholder="Internship Opportunity / Collaboration / General Inquiry" required>
+            </div>
+
+            <div class="cform-group">
+              <label for="contact-message" class="cform-label">Message</label>
+              <textarea id="contact-message" name="message" class="cform-input" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="cform-submit-btn">
+              Send Message 
+            </button>
+
+            <div class="cform-status" id="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-new">
+    <div class="container footer-new-container">
+      <!-- Row 1: Name -->
+      <div class="footer-new-name">Eranda Rashmika Wickramaarachchi</div>
+      
+      <!-- Row 2: Tagline -->
+      <div class="footer-new-tagline">Data Science Undergraduate | SLIIT Kandy</div>
+      
+      <!-- Row 3: Social Icons -->
+      <div class="footer-new-socials">
+        <a href="https://www.linkedin.com/in/rashmika-wickramaarachchi-3ba863392/?skipRedirect=true" target="_blank" aria-label="LinkedIn" class="footer-new-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/wickramaarachchi-er" target="_blank" aria-label="GitHub" class="footer-new-social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:wickramaarachchier@gmail.com" aria-label="Email" class="footer-new-social-icon"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      
+      <!-- Row 4: Divider Line -->
+      <div class="footer-new-divider"></div>
+      
+      <!-- Row 5: Copyright -->
+      <div class="footer-new-copyright">© 2026 Eranda Rashmika Wickramaarachchi. All rights reserved.</div>
+      
+      <!-- Row 6: Designed & Built -->
+      <div class="footer-new-built">Designed & Built with 💙 for Data Science</div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JS Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
